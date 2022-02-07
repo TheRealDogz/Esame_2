@@ -27,7 +27,7 @@ class CreateInhabitantsTable extends Migration
             $table->text("contab");
             $table->text("sonda");
             $table->text("dispositivi");
-            $table->text("timestamps");
+            $table->timestamps();
         });
     }
 
