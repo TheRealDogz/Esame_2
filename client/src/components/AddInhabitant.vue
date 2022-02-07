@@ -23,7 +23,7 @@
 
             <div class="w-full flex flex-col">
                 <label for="mappale" class="mb-2 mt-3">Indirizzo</label>
-                <input id="mappale" class="rounded px-3 w-full pt-1 py-1 outline-none border-2 px-2 rounded-lg py-1" type="string" name="Indirizzo" placeholder="Indirizzo" v-model="inhabitant.Indirizzo">
+                <input id="mappale" class="rounded px-3 w-full pt-1 py-1 outline-none border-2 px-2 rounded-lg py-1" type="string" name="Indirizzo" placeholder="Indirizzo" v-model="inhabitant.indirizzo">
             </div>
             
             <div class="w-full flex flex-col">
@@ -37,8 +37,13 @@
             </div>
 
             <div class="w-full flex flex-col">
+                <label for="uc" class="mb-2">uc</label>
+                <input id="uc" class="rounded px-3 w-full pt-1 py-1 outline-none border-2 px-2 rounded-lg py-1" type="string" name="nApp" placeholder="numero appartamenti" v-model="inhabitant.uc">
+            </div>
+
+            <div class="w-full flex flex-col">
+                <input type="checkbox" name="remota" id="remota" v-model="inhabitant.remota">
                 <label for="remota" class="mb-2">remota</label>
-                <input id="remota" class="rounded px-3 w-full pt-1 py-1 outline-none border-2 px-2 rounded-lg py-1" type="remota" name="CAP" placeholder="gestione remota" v-model="inhabitant.remota">
             </div>
 
             <div class="w-full flex flex-col">
@@ -54,15 +59,6 @@
                 <select name="" id="Sonda" class="outline-none border-2 px-2 rounded-lg py-1 bg-white" v-model="inhabitant.sonda">
                     <option value="Compatta">Compatta</option>
                     <option value="Remota">Remota</option>
-                </select> 
-            </div>
-
-            <div class="w-full flex flex-col">
-                <label for="offerta" class="mb-2">offerta</label>
-                <select name="" id="offerta" class="outline-none border-2 px-2 rounded-lg py-1 bg-white" v-model="inhabitant.offerta">
-                    <option value="vendita">Vendita</option>
-                    <option value="affitto">Affitto</option>
-                    <option value="affido">Affido</option>
                 </select> 
             </div>
 

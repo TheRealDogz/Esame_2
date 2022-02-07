@@ -3,6 +3,10 @@
       <div class="text-white">
           TREEBU
       </div>
+      <div>
+           <router-link active-class="text-green-500" to="/create" class="text-white">Nuovo</router-link>
+      </div>
+
       <div v-for="link in navLinks" :key="link.code" @click="goToLink(link)"
         :class="{
             'text-white' : link.code != currentRoute,
