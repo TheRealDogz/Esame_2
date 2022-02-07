@@ -1,7 +1,7 @@
 <template>
     <div class="flex items-center justify-around h-16 bg-black">
       <div class="text-white">
-          TREEBU
+          ENDI
       </div>
       <div>
            <router-link active-class="text-green-500" to="/create" class="text-white">Nuovo</router-link>
