@@ -32,7 +32,7 @@ const routes = [
     component: AddInhabitant
   },
   {
-    path: '/edit',
+    path: '/edit/:id',
     name: 'edit',
     component: AddInhabitant
   }
