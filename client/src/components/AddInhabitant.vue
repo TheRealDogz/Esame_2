@@ -65,9 +65,9 @@
             <div class="w-full flex flex-col">
                 <label for="Dispositivi" class="mb-2">Dispositivi</label>
                 <select name="" id="offeDispositivirta" class="outline-none border-2 px-2 rounded-lg py-1 bg-white" v-model="inhabitant.dispositivi">
-                    <option value="vendita">Ripartitori di calore</option>
-                    <option value="affitto">Totalizzatore di calore</option>
-                    <option value="affido">Contatore di energia termica</option>
+                    <option value="Ripartitori di calore">Ripartitori di calore</option>
+                    <option value="Totalizzatore di calore">Totalizzatore di calore</option>
+                    <option value="Contatore di energia termica">Contatore di energia termica</option>
                 </select> 
             </div>
             

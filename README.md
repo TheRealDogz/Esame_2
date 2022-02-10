@@ -1,18 +1,14 @@
-# Esame Filippo Erbisti
+# Esame Filippo Canino
 
-Esame 14/01/2022
-Filippo Erbisti
-
-# Startup Treebu
-
-** Progetto: Banca della Terra **
+Esame 07/02/2022
+Filippo Canino
 
 # Installazione
 
 1. Clonare la repository
 
 ```
-git clone https://github.com/filippoerbisti/esame_treebu.git
+git clone https://github.com/TheRealDogz/Esame_2
 ```
 
 # Installazione Client
@@ -57,7 +53,30 @@ php artisan serve
 # Route Client
 
 const routes = [
-
+{
+path: '',
+redirect: '/home'
+},
+{
+path: '/home',
+name: 'home',
+component: Home
+},
+{
+path: '/detail/:id',
+name: 'detail',
+component: Detail
+},
+{
+path: '/create',
+name: 'create',
+component: AddInhabitant
+},
+{
+path: '/edit/:id',
+name: 'edit',
+component: AddInhabitant
+}
 ]
 
 # Route Api
